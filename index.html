@@ -18,7 +18,7 @@
       --white: #f5f1eb;
       --gray: #9a9a9a;
       --line: rgba(255,255,255,0.08);
-      --card: rgba(255, 255, 255, 0.03); /* CORREÇÃO: Variável adicionada */
+      --card: rgba(255, 255, 255, 0.03);
       --serif: "Cinzel", serif;
       --sans: "Montserrat", sans-serif;
     }
@@ -245,7 +245,6 @@
       height: 520px;
       background: linear-gradient(180deg, #0a0a0f, #000);
       clip-path: polygon(42% 0, 58% 0, 65% 20%, 78% 28%, 92% 100%, 8% 100%, 22% 28%, 35% 20%);
-      /* CORREÇÃO: Usando margin-top para não conflitar com o transform do parallax no JS */
       animation: float 6s ease-in-out infinite;
     }
     @keyframes float {
@@ -319,7 +318,7 @@
       border: 1px solid var(--line);
       transition: 0.5s;
       cursor: pointer;
-      background: var(--card); /* Agora funciona corretamente */
+      background: var(--card);
     }
     .character::before {
       content: '';
@@ -702,7 +701,7 @@
 
 <div class="loader" id="loader">
   <div class="loader-content">
-    <div class="loader-symbol">✦</div>
+    <div class="loader-symbol"></div>
     <p style="color: var(--gray); font-size: 12px; letter-spacing: 3px; margin-top: 20px;">ABRINDO O DIÁRIO...</p>
   </div>
 </div>
@@ -767,7 +766,7 @@
       <article class="character elena reveal" data-name="Elena Gilbert" data-text="Elena está no centro dos acontecimentos de Mystic Falls. Sua vida muda quando conhece Stefan e Damon.">
         <span class="character-number">01</span>
         <div class="character-letter">E</div>
-        <img src="https://static.wikia.nocookie.net/vampirediaries/images/e/eb/TVD-Elena.jpg" alt="Elena" class="character-image" loading="lazy" onerror="this.style.display='none'">
+        <img src="https://i.postimg.cc/fJVwWyrw/IMG-20260823-WA0007.jpg" alt="Elena" class="character-image" loading="lazy" onerror="this.style.display='none'">
         <div class="character-info">
           <h3>Elena Gilbert</h3>
           <p>A garota no centro da história</p>
@@ -778,7 +777,7 @@
       <article class="character damon reveal" data-name="Damon Salvatore" data-text="Damon é imprevisível, sarcástico e intenso. Por trás de sua postura provocadora existem vínculos profundos.">
         <span class="character-number">02</span>
         <div class="character-letter">D</div>
-        <img src="https://static.wikia.nocookie.net/vampirediaries/images/9/9a/TVD-Damon.jpg" alt="Damon" class="character-image" loading="lazy" onerror="this.style.display='none'">
+        <img src="https://i.postimg.cc/crvs1Cbx/IMG-20260823-WA0008.jpg" alt="Damon" class="character-image" loading="lazy" onerror="this.style.display='none'">
         <div class="character-info">
           <h3>Damon Salvatore</h3>
           <p>O irmão imprevisível</p>
@@ -789,7 +788,7 @@
       <article class="character stefan reveal" data-name="Stefan Salvatore" data-text="Stefan tenta viver de acordo com seus princípios enquanto enfrenta o peso do passado.">
         <span class="character-number">03</span>
         <div class="character-letter">S</div>
-        <img src="https://static.wikia.nocookie.net/vampirediaries/images/2/2c/TVD-Stefan.jpg" alt="Stefan" class="character-image" loading="lazy" onerror="this.style.display='none'">
+        <img src="https://i.postimg.cc/mtPbZk5Z/IMG-20260823-WA0009.jpg" alt="Stefan" class="character-image" loading="lazy" onerror="this.style.display='none'">
         <div class="character-info">
           <h3>Stefan Salvatore</h3>
           <p>O irmão que busca redenção</p>
@@ -800,7 +799,7 @@
       <article class="character bonnie reveal" data-name="Bonnie Bennett" data-text="Bonnie é uma bruxa poderosa e uma das maiores aliadas do grupo.">
         <span class="character-number">04</span>
         <div class="character-letter">B</div>
-        <img src="https://static.wikia.nocookie.net/vampirediaries/images/5/5e/TVD-Bonnie.jpg" alt="Bonnie" class="character-image" loading="lazy" onerror="this.style.display='none'">
+        <img src="https://i.postimg.cc/TpKR214Y/IMG-20260823-WA0011.jpg" alt="Bonnie" class="character-image" loading="lazy" onerror="this.style.display='none'">
         <div class="character-info">
           <h3>Bonnie Bennett</h3>
           <p>A bruxa e melhor amiga</p>
@@ -811,7 +810,7 @@
       <article class="character caroline reveal" data-name="Caroline Forbes" data-text="Caroline passa por uma grande transformação e se torna uma personagem forte e independente.">
         <span class="character-number">05</span>
         <div class="character-letter">C</div>
-        <img src="https://static.wikia.nocookie.net/vampirediaries/images/8/85/TVD-Caroline.jpg" alt="Caroline" class="character-image" loading="lazy" onerror="this.style.display='none'">
+        <img src="https://i.postimg.cc/ykDV6xb8/IMG-20260823-WA0010.jpg" alt="Caroline" class="character-image" loading="lazy" onerror="this.style.display='none'">
         <div class="character-info">
           <h3>Caroline Forbes</h3>
           <p>Uma força em evolução</p>
@@ -822,7 +821,7 @@
       <article class="character klaus reveal" data-name="Klaus Mikaelson" data-text="O híbrido original. Carismático, perigoso e movido por um desejo obsessivo de criar sua família.">
         <span class="character-number">06</span>
         <div class="character-letter">K</div>
-        <img src="https://static.wikia.nocookie.net/vampirediaries/images/4/4e/TVD-Klaus.jpg" alt="Klaus" class="character-image" loading="lazy" onerror="this.style.display='none'">
+        <img src="https://i.postimg.cc/nCXHVrPL/IMG-20260823-WA0012.jpg" alt="Klaus" class="character-image" loading="lazy" onerror="this.style.display='none'">
         <div class="character-info">
           <h3>Klaus Mikaelson</h3>
           <p>O híbrido original</p>
@@ -839,8 +838,8 @@
     </div>
     <div class="choices reveal">
       <button class="choice-button" data-type="humano" data-result="Você escolheu a humanidade. Sua força está na compaixão e na capacidade de manter sua humanidade.">🖤 HUMANOS</button>
-      <button class="choice-button" data-type="vampiro" data-result="Você escolheu o sobrenatural. Poder, mistério e segredos esperam por você nas sombras.">🩸 VAMPIROS</button>
-      <button class="choice-button" data-type="bruxa" data-result="Você escolheu a magia. Conhecimento e coragem podem mudar o destino de uma cidade.">🔮 BRUXAS</button>
+      <button class="choice-button" data-type="vampiro" data-result="Você escolheu o sobrenatural. Poder, mistério e segredos esperam por você nas sombras."> VAMPIROS</button>
+      <button class="choice-button" data-type="bruxa" data-result="Você escolheu a magia. Conhecimento e coragem podem mudar o destino de uma cidade."> BRUXAS</button>
     </div>
     <div class="choice-result" id="choiceResult"><em>Sua escolha aparecerá aqui...</em></div>
   </section>
@@ -964,7 +963,7 @@
     }
   });
 
-  // Parallax (CORREÇÃO: Agora usa transform sem conflitar com a animação 'float' que foi alterada para margin-top)
+  // Parallax
   const moon = document.getElementById("parallaxMoon");
   const silhouette = document.getElementById("parallaxSilhouette");
   window.addEventListener("scroll", () => {
